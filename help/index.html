@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NextcloudApps · Help</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<header>
+  <h1>NextcloudApps — Help</h1>
+  <p>Deck, Notes, Bookmarks and News for your Nextcloud, in one app.</p>
+  <nav class="langs"><a href="#en">English</a><a href="#es">Español</a></nav>
+</header>
+
+<section class="lang" id="en">
+<h2>What you need</h2>
+<ul>
+  <li>A Nextcloud server you can sign in to.</li>
+  <li>The Nextcloud apps you want to use, installed on that server: <strong>Deck</strong>,
+    <strong>Notes</strong>, <strong>Bookmarks</strong> and/or <strong>News</strong>. Each section of
+    NextcloudApps only works if its app is installed on the server. Your administrator can install them from
+    the Nextcloud app store.</li>
+</ul>
+
+<h2>Signing in</h2>
+<h3>With your server address (recommended)</h3>
+<p>Type your server address (for example <code>cloud.example.com</code>) and tap <em>Connect</em>. Your
+server's own login page opens: sign in there, grant access, and you are back in the app. This works with
+two-factor authentication and single sign-on.</p>
+<h3>With a QR code</h3>
+<p>In Nextcloud on the web, open <em>Settings → Security → Devices &amp; sessions</em>, create a new app
+password and choose <em>Show QR code</em>. In the app, tap <em>Scan QR Code</em> and point the camera at it.</p>
+<h3>With username and password</h3>
+<p>Tap <em>Login with Credentials</em>. The app exchanges your password for an app password and does not keep
+your main password.</p>
+
+<h2>Working offline</h2>
+<p>Your content is kept on the device, so you can read and edit it without a connection. Changes made offline
+are queued and sent to the server when you are back online. If something is still waiting to sync, the app
+shows a pending-sync indicator; tap it to see the changes or send them now.</p>
+
+<h2>Troubleshooting</h2>
+<h3>A section says the app is not installed or shows nothing</h3>
+<p>Check that the matching Nextcloud app (Deck, Notes, Bookmarks or News) is installed and enabled on your
+server.</p>
+<h3>News has no new articles</h3>
+<p>The News app on the server fetches feeds in the background. If nothing updates, ask your administrator to
+check that Nextcloud background jobs (cron) are running.</p>
+<h3>The app can't connect to my server</h3>
+<ul>
+  <li>Check the address, and that the server is reachable from this network.</li>
+  <li>Servers with self-signed certificates may need that certificate installed on the device.</li>
+  <li>Plain <code>http://</code> works but is not encrypted; use <code>https://</code> when you can.</li>
+</ul>
+<h3>Signing out and revoking access</h3>
+<p>Signing out removes your content from the device. <strong>Changes that haven't synced yet are lost</strong>,
+so make sure nothing is pending first. To revoke the app's access completely, delete its app
+password in <em>Settings → Security → Devices &amp; sessions</em> on your Nextcloud.</p>
+
+<h2>Contact</h2>
+<p>Something not working? Write to <a href="mailto:desarrollodroide@gmail.com">desarrollodroide@gmail.com</a>
+and include your device, app version (in Settings) and Nextcloud version.</p>
+<p><a href="../privacy/">Privacy Policy</a> · NextcloudApps is an independent app, not affiliated with or
+endorsed by Nextcloud GmbH.</p>
+</section>
+
+<section class="lang" id="es" lang="es">
+<h2>Qué necesitas</h2>
+<ul>
+  <li>Un servidor Nextcloud en el que puedas iniciar sesión.</li>
+  <li>Las apps de Nextcloud que quieras usar, instaladas en ese servidor: <strong>Deck</strong>,
+    <strong>Notes</strong>, <strong>Bookmarks</strong> y/o <strong>News</strong>. Cada sección de NextcloudApps
+    sólo funciona si su app está instalada en el servidor. Tu administrador puede instalarlas desde la tienda
+    de apps de Nextcloud.</li>
+</ul>
+
+<h2>Iniciar sesión</h2>
+<h3>Con la dirección de tu servidor (recomendado)</h3>
+<p>Escribe la dirección de tu servidor (por ejemplo <code>cloud.example.com</code>) y pulsa <em>Connect</em>.
+Se abre la página de acceso de tu propio servidor: inicia sesión, concede acceso y vuelves a la app. Funciona
+con verificación en dos pasos y con inicio de sesión único.</p>
+<h3>Con un código QR</h3>
+<p>En Nextcloud desde la web, abre <em>Ajustes → Seguridad → Dispositivos y sesiones</em>, crea una contraseña
+de aplicación y elige <em>Mostrar código QR</em>. En la app, pulsa <em>Scan QR Code</em> y apunta la cámara al
+código.</p>
+<h3>Con usuario y contraseña</h3>
+<p>Pulsa <em>Login with Credentials</em>. La app cambia tu contraseña por una contraseña de aplicación y no
+guarda la principal.</p>
+
+<h2>Sin conexión</h2>
+<p>Tu contenido se guarda en el dispositivo, así que puedes leerlo y editarlo sin conexión. Los cambios hechos
+sin conexión quedan en cola y se envían al servidor cuando vuelves a tener red. Si algo está pendiente de
+sincronizar, la app muestra un indicador; púlsalo para ver los cambios o enviarlos ya.</p>
+
+<h2>Problemas frecuentes</h2>
+<h3>Una sección dice que la app no está instalada o no muestra nada</h3>
+<p>Comprueba que la app de Nextcloud correspondiente (Deck, Notes, Bookmarks o News) está instalada y
+activada en tu servidor.</p>
+<h3>News no trae artículos nuevos</h3>
+<p>La app News del servidor descarga las fuentes en segundo plano. Si no se actualiza nada, pide a tu
+administrador que compruebe que las tareas en segundo plano de Nextcloud (cron) se están ejecutando.</p>
+<h3>La app no conecta con mi servidor</h3>
+<ul>
+  <li>Revisa la dirección y que el servidor sea accesible desde esta red.</li>
+  <li>Los servidores con certificado autofirmado pueden necesitar que instales ese certificado en el
+    dispositivo.</li>
+  <li><code>http://</code> funciona, pero sin cifrar; usa <code>https://</code> siempre que puedas.</li>
+</ul>
+<h3>Cerrar sesión y retirar el acceso</h3>
+<p>Al cerrar sesión se borra tu contenido del dispositivo. <strong>Los cambios que aún no se han sincronizado
+se pierden</strong>, así que comprueba antes que no quede nada pendiente. Para retirarle el acceso por completo, borra su
+contraseña de aplicación en <em>Ajustes → Seguridad → Dispositivos y sesiones</em> de tu Nextcloud.</p>
+
+<h2>Contacto</h2>
+<p>¿Algo no funciona? Escribe a <a href="mailto:desarrollodroide@gmail.com">desarrollodroide@gmail.com</a>
+indicando tu dispositivo, la versión de la app (en Ajustes) y la versión de Nextcloud.</p>
+<p><a href="../privacy/#es">Política de privacidad</a> · NextcloudApps es una app independiente, sin relación
+con Nextcloud GmbH ni respaldada por ella.</p>
+</section>
+</main>
+</body>
+</html>
