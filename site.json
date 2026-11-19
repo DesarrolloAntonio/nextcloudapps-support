@@ -1,0 +1,40 @@
+{
+  "base_url": "https://desarrolloantonio.github.io/nextcloudapps-support/",
+
+  "site_name": "Apps for Nextcloud",
+  "play_url": "https://play.google.com/store/apps/details?id=com.desarrollodroide.nextcloudapps",
+  "og_image": "assets/img/og.jpg",
+  "og_image_alt": "Apps for Nextcloud: Deck, Notes, News and Bookmarks, native and offline.",
+  "og_image_width": 1024,
+  "og_image_height": 500,
+
+  "pages": [
+    {
+      "path": "",
+      "file": "index.html",
+      "title": "Apps for Nextcloud: Deck, Notes, News and Bookmarks on Android",
+      "og_title": "Apps for Nextcloud",
+      "description": "Deck, Notes, News and Bookmarks for your Nextcloud, in one Android app. Works offline, and your data goes only to your server. Free, no ads, no tracking.",
+      "software_application": true,
+      "lastmod": "2026-11-18"
+    },
+    {
+      "path": "faq/",
+      "file": "faq/index.html",
+      "title": "FAQ · Apps for Nextcloud",
+      "og_title": "Apps for Nextcloud: questions and answers",
+      "description": "Is Apps for Nextcloud official? Does it work offline? What does it need, and what does it do with your data? Short answers about the Android app.",
+      "lastmod": "2026-11-18"
+    },
+    {
+      "path": "press/",
+      "file": "press/index.html",
+      "title": "Press kit · Apps for Nextcloud",
+      "og_title": "Apps for Nextcloud: press kit",
+      "description": "Press kit for Apps for Nextcloud: a short description in English, German and Spanish, the fact sheet, the app icon, the feature graphic and screenshots.",
+      "lastmod": "2026-11-18"
+    },
+    { "path": "help/", "lastmod": "2026-11-07" },
+    { "path": "privacy/", "lastmod": "2026-09-29" }
+  ]
+}

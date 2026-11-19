@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://desarrolloantonio.github.io/nextcloudapps-support/sitemap.xml

@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apps for Nextcloud · Help</title>
+<meta name="description" content="Help for Apps for Nextcloud: sign in to your Nextcloud, work offline, fix sync problems and use servers with self-signed certificates. Deck, Notes, News and Bookmarks on Android.">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -51,16 +52,42 @@ check that Nextcloud background jobs (cron) are running.</p>
 <h3>The app can't connect to my server</h3>
 <ul>
   <li>Check the address, and that the server is reachable from this network.</li>
-  <li>Servers with self-signed certificates may need that certificate installed on the device.</li>
-  <li>Plain <code>http://</code> works but is not encrypted; use <code>https://</code> when you can.</li>
+  <li>Servers with self-signed certificates may need that certificate installed on the device (see below).</li>
+  <li>Plain <code>http://</code> works but is not encrypted; use <code>https://</code> when you can. The app
+    warns you if you use <code>http://</code> with a server on the internet.</li>
 </ul>
+<h3 id="certificates">My server uses a self-signed certificate or my own CA</h3>
+<p>The app trusts the certificates you install on the device, so a home server with its own certificate
+works once the device trusts it. If you skip this, signing in fails with
+<em>Secure connection failed</em>.</p>
+<ul>
+  <li><strong>Android:</strong> copy the certificate (<code>.crt</code> or <code>.pem</code>) to the phone, then go to
+    <em>Settings → Security → More security settings → Encryption &amp; credentials → Install a certificate →
+    CA certificate</em> (the menu names vary by phone; search Settings for "certificate").</li>
+  <li><strong>iPhone and iPad:</strong> open the certificate to install its profile in
+    <em>Settings → General → VPN &amp; Device Management</em>, then turn on full trust for it in
+    <em>Settings → General → About → Certificate Trust Settings</em>.</li>
+</ul>
+<p>Install the certificate of the authority that signed your server's certificate (your own CA), or the
+server's certificate itself if it signed itself.</p>
+<h3 id="sync">My changes don't reach the server</h3>
+<ul>
+  <li>If the pending-sync indicator is showing, tap it to see what is waiting and send it now.</li>
+  <li>On Android, if the app says <em>Your session has ended</em>, the app password was revoked or expired: tap
+    <em>Sign in again</em>. Nothing on the device is deleted.</li>
+  <li>Check that the Nextcloud app for that section (Deck, Notes, Bookmarks or News) is still enabled on
+    the server.</li>
+</ul>
+<h3 id="official">Is this an official Nextcloud app?</h3>
+<p>No. Apps for Nextcloud is an independent app made by a single developer. It talks only to the Nextcloud
+server you sign in to; the developer receives none of your data.</p>
 <h3>Signing out and revoking access</h3>
 <p>Signing out removes your content from the device. <strong>Changes that haven't synced yet are lost</strong>,
 so make sure nothing is pending first. To revoke the app's access completely, delete its app
 password in <em>Settings → Security → Devices &amp; sessions</em> on your Nextcloud.</p>
 
 <h2>Contact</h2>
-<p>Something not working? Write to <a href="mailto:desarrollodroide@gmail.com">desarrollodroide@gmail.com</a>
+<p>Something not working? Write to <a href="mailto:nextcloudapps@desarrollodroide.es">nextcloudapps@desarrollodroide.es</a>
 and include your device, app version (in Settings) and Nextcloud version.</p>
 <p><a href="../privacy/">Privacy Policy</a> · Apps for Nextcloud is an independent app, not affiliated with or
 endorsed by Nextcloud GmbH.</p>
@@ -105,16 +132,42 @@ administrador que compruebe que las tareas en segundo plano de Nextcloud (cron) 
 <ul>
   <li>Revisa la dirección y que el servidor sea accesible desde esta red.</li>
   <li>Los servidores con certificado autofirmado pueden necesitar que instales ese certificado en el
-    dispositivo.</li>
-  <li><code>http://</code> funciona, pero sin cifrar; usa <code>https://</code> siempre que puedas.</li>
+    dispositivo (ver abajo).</li>
+  <li><code>http://</code> funciona, pero sin cifrar; usa <code>https://</code> siempre que puedas. La app te
+    avisa si usas <code>http://</code> con un servidor de internet.</li>
 </ul>
+<h3 id="certificados">Mi servidor usa un certificado autofirmado o mi propia CA</h3>
+<p>La app se fía de los certificados que instales en el dispositivo, así que un servidor de casa con su propio
+certificado funciona en cuanto el dispositivo lo da por bueno. Si no lo instalas, el inicio de sesión falla con
+<em>Secure connection failed</em>.</p>
+<ul>
+  <li><strong>Android:</strong> copia el certificado (<code>.crt</code> o <code>.pem</code>) al móvil y ve a
+    <em>Ajustes → Seguridad → Más ajustes de seguridad → Cifrado y credenciales → Instalar un certificado →
+    Certificado de CA</em> (los nombres cambian según el móvil; busca «certificado» en Ajustes).</li>
+  <li><strong>iPhone y iPad:</strong> abre el certificado para instalar su perfil en
+    <em>Ajustes → General → VPN y gestión de dispositivos</em> y después activa la confianza total en
+    <em>Ajustes → General → Información → Ajustes de confianza de certificados</em>.</li>
+</ul>
+<p>Instala el certificado de la autoridad que firmó el de tu servidor (tu propia CA), o el del propio
+servidor si se firmó a sí mismo.</p>
+<h3 id="sincronizar">Mis cambios no llegan al servidor</h3>
+<ul>
+  <li>Si se ve el indicador de cambios pendientes, púlsalo para ver qué espera y enviarlo ya.</li>
+  <li>En Android, si la app dice <em>Your session has ended</em>, la contraseña de aplicación se ha revocado o ha
+    caducado: pulsa <em>Sign in again</em>. No se borra nada del dispositivo.</li>
+  <li>Comprueba que la app de Nextcloud de esa sección (Deck, Notes, Bookmarks o News) sigue activada en el
+    servidor.</li>
+</ul>
+<h3 id="oficial">¿Es una app oficial de Nextcloud?</h3>
+<p>No. Apps for Nextcloud es una app independiente hecha por un solo desarrollador. Sólo habla con el servidor
+Nextcloud en el que inicias sesión; el desarrollador no recibe ninguno de tus datos.</p>
 <h3>Cerrar sesión y retirar el acceso</h3>
 <p>Al cerrar sesión se borra tu contenido del dispositivo. <strong>Los cambios que aún no se han sincronizado
 se pierden</strong>, así que comprueba antes que no quede nada pendiente. Para retirarle el acceso por completo, borra su
 contraseña de aplicación en <em>Ajustes → Seguridad → Dispositivos y sesiones</em> de tu Nextcloud.</p>
 
 <h2>Contacto</h2>
-<p>¿Algo no funciona? Escribe a <a href="mailto:desarrollodroide@gmail.com">desarrollodroide@gmail.com</a>
+<p>¿Algo no funciona? Escribe a <a href="mailto:nextcloudapps@desarrollodroide.es">nextcloudapps@desarrollodroide.es</a>
 indicando tu dispositivo, la versión de la app (en Ajustes) y la versión de Nextcloud.</p>
 <p><a href="../privacy/#es">Política de privacidad</a> · Apps for Nextcloud es una app independiente, sin relación
 con Nextcloud GmbH ni respaldada por ella.</p>
