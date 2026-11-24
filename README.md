@@ -3,11 +3,11 @@
 Public site of the Apps for Nextcloud Android app, served with GitHub Pages. Plain static files, no
 framework.
 
-- Home: https://desarrolloantonio.github.io/nextcloudapps-support/
-- FAQ: https://desarrolloantonio.github.io/nextcloudapps-support/faq/
-- Press kit: https://desarrolloantonio.github.io/nextcloudapps-support/press/
-- Help: https://desarrolloantonio.github.io/nextcloudapps-support/help/
-- Privacy: https://desarrolloantonio.github.io/nextcloudapps-support/privacy/
+- Home: https://nextcloudapps.desarrollodroide.es/
+- FAQ: https://nextcloudapps.desarrollodroide.es/faq/
+- Press kit: https://nextcloudapps.desarrollodroide.es/press/
+- Help: https://nextcloudapps.desarrollodroide.es/help/
+- Privacy: https://nextcloudapps.desarrollodroide.es/privacy/
 
 ## Changing the site's address
 
