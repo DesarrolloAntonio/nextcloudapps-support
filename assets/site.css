@@ -366,11 +366,11 @@ section { scroll-margin-top: 16px; }
 .blurb p + p { margin-top: 10px; }
 .blurb-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
 .blurb-head h3 { font-size: 1.1rem; font-weight: 700; color: var(--acc); }
-.copy {
+button.copy {
   font: inherit; font-size: 0.85rem; font-weight: 650; cursor: pointer;
   background: var(--acc-soft); color: var(--acc-soft-ink); border: 0; border-radius: 999px; padding: 6px 14px;
 }
-.copy:hover { filter: brightness(0.97); }
+button.copy:hover { filter: brightness(0.97); }
 .facts {
   margin: 0; display: grid; gap: 0; background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 8px 24px; max-width: 52rem;
